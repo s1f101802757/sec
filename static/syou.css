@@ -1,0 +1,111 @@
+
+.lerrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.lerrow:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-top: solid 2px #333;
+  border-left: solid 2px #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -4px;
+  transform: rotate(-45deg);
+}
+
+.berrow {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.berrow:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    position: absolute;
+    top: 50%;
+    left: -20;
+    margin-top: -6px;
+    transform: rotate(45deg);
+}
+
+  .lerrow2 {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  .lerrow2:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-left: solid 2px #333;
+    position: absolute;
+    top: 50%;
+    left: 13;
+    margin-top: -12px;
+    transform: rotate(-45deg);
+  }
+
+div.b{
+    top:20%;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    background: #fff0cd;
+    box-shadow: 0px 0px 0px 5px #fff0cd;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    text-align:center;
+}
+
+.b::after {
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    text-align:center;
+}
+
+.b a {
+    margin: 0; 
+    padding: 0;
+    font-size:150%;
+    display:inline-block;
+}
+  
+.b:hover::after{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+body{
+    background-color: rgb(255, 251, 239);
+}
+

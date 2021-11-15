@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <p>^ ' _ ' ^</p>
+ {% load static %}
+ <link rel="stylesheet" type="text/css" href="{% static "/style.css"%}">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <div class="content">
+  <table>
+  <tr>
+  <td><button type="button" class="button1" onclick="location.href='#r'">概要</button></td>
+  <td><button type="button" class="button1" onclick="location.href='#al'">アルゴリズム×セキュリティ</button></td>
+  <td><button type="button" class="button1" onclick="location.href='#pass'">パスワード管理</button></td>
+  <td><button type="button" class="button1" onclick="location.href='#leg'">SNS物語</button></td>
+  <td><button type="button" class="button1" onclick="location.href='#bee'">フィッシングサイト</button></td>
+  </tr>
+  </table>
+  <!--<div class="inner">
+   <a href="#r"  class="btn--r"><span>概要</span></a>
+   <a href="#al" class="btn--al"><span>アルゴリズム×セキュリティ</span></a>
+   <a href="#pass" class="btn--pass"><span>パスワード管理</span></a>
+   <a href="#leg" class="btn--leg"><span>SNS物語</span></a>
+   <a href="#bee" class="btn--bee"><span>フィッシングサイト</span></a>
+ </div>-->
+</div>
+</head>
+
+<body class="toppage">
+<h1>#すぐに使えるサイバーセキュリティ教材</h1>
+ <div class="alusu">
+  <h3 id = "r">概要</h3>
+  <ul>
+   <li>このアプリは使用書を用いて遊ぶことを前提として作成されています</li>
+   <li><a href="{% url 'syou'%}">説明書</a></li>
+  <ul>
+  <br>
+ </div>
+ <div class="ebio">
+  <h3 id = "al">アルゴリズム×セキュリティ</h3>
+  <div class="pic">
+   <iframe src="https://scratch.mit.edu/projects/595671455/embed" allowtransparency="true" width="685" height="602" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  </div>
+    <br>
+      <br>
+        <br>
+ </div>
+ <div class="fren">
+  <h3 id="pass">パスワード管理</h3>
+  <div class="pic1">
+    <iframe src="https://scratch.mit.edu/projects/596250100/embed" allowtransparency="true" width="685" height="602" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  </div>
+  <br>
+ </div>
+ <div class="ibu">
+  <h3 id = "leg">SNS物語</h3>
+  こちらのゲームはダウンロードして遊んでいただくRPG風のコンテンツです。<br><br>
+  ダウンロードの仕方：
+  <ol>
+   <li>SNS物語ダウンロード先リンクをマウス左を１回クリックしていただくと図１のような画面に飛ぶ</li>
+    図1  <img src="static/img/準備.png" width="300">       図2   <img src="static/img/準備1.png" width="300"> 図3  <img src="static/img/準備2.png" width="300">
+   <li>右上のすべてダウンロードを先ほどと同じように１回クリックしてください。すると”ダウンロードを準備しています”と右下に表示されますので、準備が完了しましたとでるまでしばらく待ってください。</li>
+   <li>完了したら、左下にできた、SNS物語-..........zipを１回クリックしてください。開いていますが表示されしばらく待つと図２の画面がでます。</li>
+   <li>SNS物語をマウス右を一回クリックし(図3)、すべて展開をマウス左を一回クリックする</li>
+   <li>図4の画面が表示されますので、完了時に展開されたファイルを表示するにチェックが入ってることを確認し、右下の”展開(E)”をマウス左を１回クリックする</li>
+   <li>少し待つと図5の画面が表示されます</li>
+   図4  <img src="static/img/準備3.png" width="300">        図5  <img src="static/img/準備4.png" width="300">
+  </ol>これでダウンロード完了<br>
+  <br>
+  ゲームの初め方：
+  <ol>
+    <li>ダウンロードしたSNS物語を今度はマウス左を２回クリック(図6)</li>
+    図6  <img src="static/img/準備5.png" width="300"> 
+    <li>LightApp.exeを同じようにマウス左を２回クリックする</li>
+  </ol>これでゲーム開始！
+
+
+  <div class="pic2">
+   <a href="https://drive.google.com/drive/folders/1bhKK5oX5COHNUFhjC-96W71ef-gVTUZw?usp=sharing" class="berrow">SNS物語ダウンロード先リンク<a class="lerrow2"></a>
+  </div>
+  <br>
+ </div>
+ <div class="mery">
+  <h3 id = "bee">フィッシングサイト</h3>
+  フィッシングサイトとは→→偽サイトに誘導し、アカウントのIDやパスワード、クレジットカードなどのいわゆる個人情報とよばれる重要な情報を入力させてその個人情報を盗みとるとめのサイトのこと<br>
+  以下では実際のサイトやメールに似た画像が表示されています。
+  実際のサイトと見比べてみてあてはまるもののボタンを選択してね。
+  より高得点をめざそう！
+  <br>
+  <br>
+  <div class="pic3">
+   <img src="static/img/fiss_ao.png" width="700">
+  </div>
+  <br>
+  <div class="pic4">
+   <img src="static/img/fiss_ama.png" width="700">
+  </div>
+  <br>
+  <div class="pic5">
+   <img src="static/img/fiss_mama.png" width="700">
+  </div>
+  <br>
+  <div class="pic6">
+   <img src="static/img/fiss_pay.png" width="700">
+  </div>
+  <br>
+   <!--サイトごとで同じパスワードを使用するかの問題を入れる-->
+  <br>
+  <h2 id="_question">ここに問題が表示されます。</h2>
+  <!--回答-->
+  <ul>
+    <li id="_ans1">回答１</li>
+    <li id="_ans2">回答２</li>
+    <li id="_ans3">回答３</li>
+  </ul>
+  <button type="button" id="_answer_1" onclick="Answer_Check(1)">回答1</button>
+  <button type="button" id="_answer_2" onclick="Answer_Check(2)">回答2</button>
+  <button type="button" id="_answer_3" onclick="Answer_Check(3)">回答3</button>
+  <script type="text/javascript">
+  // 初期画面起動時
+  var Question = [
+    ["①：あてはまるのはどれ？",
+      "1. 🔒 ", 
+      "2. ✔",
+      "3.  (なにもなし)",
+      "1"],
+    ["②：あてはまるのはどれ？",
+      "1. なし",
+      "2. 洋服",
+      "3. 洋",
+      "3"],
+    ["③：あてはまるのはどれ？",
+      "1. ip",
+      "2. jp",
+      "3. jq",
+      "2"],
+    ["④：あてはまるのはどれ？",
+      "1. xyz",
+      "2. jp",
+      "3. xxx",
+      "2"],
+    ["⑤：あてはまるのはどれ？",
+      "1. A" , 
+      "2. a",
+      "3. ą",
+      "2"],
+    ["⑥：あてはまるのはどれ？",
+      "1. hp", 
+      "2. http",
+      "3. https",
+      "3"],
+    ["⑦：あてはまるのはどれ？",
+      "1. amzon.co.jp", 
+      "2. amazon.co.jp",
+      "3. amazoon.co.jp",
+      "2"],
+    ["⑧：あてはまるのはどれ？",
+      "1. オレンジ色の→", 
+      "2. なにもつかない",
+      "3. 黄色の→",
+      "1"],
+    ["⑨：おかしなところはどこ？",
+      "1. (ⅰ)", 
+      "2. (ⅱ)",
+      "3. (ⅲ)",
+      "1"],
+    ["⑩：このメールを受け取ったらどのように行動するのがただしいでしょうか？",
+      "1. Amazonでログインをクリックする", 
+      "2. Amazonでログインをクリックしログインする",
+      "3. メールをごみ箱に捨てる",
+      "3"],
+    ["⑪：あてはまるのはどれ？",
+      "1. e", 
+      "2. a",
+      "3. o",
+      "2"],
+    ["⑫：あてはまるのはどれ？",
+      "1. パ", 
+      "2. ぺ",
+      "3. バ",
+      "1"],
+    ["⑬：あてはまるのはどれ？",
+      "1. 🔓", 
+      "2. 🔒",
+      "3. 🔐",
+      "2"],
+    ["⑭：あてはまるのはどれ？",
+      "1. new", 
+      "2. login",
+      "3. account",
+      "3"],
+    ];
+
+  var Q = document.getElementById('_question');
+  var A1 = document.getElementById('_ans1');
+  var A2 = document.getElementById('_ans2');
+  var A3 = document.getElementById('_ans3');
+  var A4 = document.getElementById('_ans4');
+  var A5 = document.getElementById('_ans5');
+  var A6 = document.getElementById('_ans6');
+  var A7 = document.getElementById('_ans7');
+  var A8 = document.getElementById('_ans8');
+  
+
+  var Correct = 0;
+
+  var Qcnt = 0;
+
+  Q_Set();
+
+  function Q_Set() {
+    Q.textContent = Question[Qcnt][0];
+    A1.textContent = Question[Qcnt][1];
+    A2.textContent = Question[Qcnt][2];
+    A3.textContent = Question[Qcnt][3];
+    A4.textContent = Question[Qcnt][4];
+    
+  };
+
+  function Answer_Check(ans) {
+    if(ans == Question[Qcnt][4]) {
+      alert("正解");
+      Correct++;
+    }
+    else {
+      if(Qcnt==0){  //1
+        alert("不正解：httpsがつくことでセキュリティがしっかりしているサイトであり、同様に🔒マークが用いられる");
+      }
+      else if(Qcnt==1){ //3
+        alert("不正解：洋服の青山のサイト店名からきている、よって洋が正解");
+      }
+      else if(Qcnt==2){ //3
+        alert("不正解：.jpは日本のドメイン名で、登録できるのは日本に住所がある組織、個人のみが使用できる");
+      }    
+      else if(Qcnt==3){ //4
+        alert("不正解：.jpは日本のドメイン名で、登録できるのは日本に住所がある組織、個人のみが使用できる、xxxはだれでも取得が可能で安全性が低い");
+      }
+      else if(Qcnt==4){ //5
+        alert("不正解：aが正解");
+      }
+      else if(Qcnt==5){ //6
+        alert("不正解：httpという通信規約(プロトコル)にsがつくことでセキュリティがしっかりしているサイトを意味する");
+      }
+      else if(Qcnt==6){ //7
+        alert("不正解：amazonと記載されているもの以外全て偽物。1はam'a'zonのaが不足、3はamazo'o'nとoが多い");
+      }
+      else if(Qcnt==7){ //8
+        alert("不正解：お客さんの満足を表す笑顔のようになっている");
+      }
+      else if(Qcnt==8){ //9
+        alert("不正解：aからzまで→が繋がっていて、AからZまで全ての商品がそろっていることを意味している");
+      }
+      else if(Qcnt==9){ //10
+        alert("不正解：Pay amazonは存在しない");
+      }
+      else if(Qcnt==10){ //11
+        alert("不正解：HP元はPaypalよってaが正しい");
+      }
+      else if(Qcnt==11){ //12
+        alert("不正解：Paypal日本語でペイパルと読む");
+      }
+      else if(Qcnt==12){ //13
+        alert("不正解：しっかりと鍵がかかっている🔒が正解");
+      }
+      else if(Qcnt==13){ //14
+        alert("不正解：新規登録を右クリックしてリンクをコピーするとわかるよ");
+      }
+      else{
+        alert("不正解");
+      }
+    }
+    Qcnt++;
+    if (Qcnt == Question.length) {
+      Q.textContent = "正解数は、全" + Qcnt + "問中" + Correct  + "点でした。";
+      /*A1.textContent = "①：";
+      A2.textContent = "②：東洋(Toyo)のサイトのToyoNetACE";
+      A3.textContent = "③：東洋(Toyo)のサイトのToyoNetACE";
+      A4.textContent = "④：.jpは日本のドメイン名で、登録できるのは日本二重所がある組織、個人のみ";
+      A5.textContent = "⑤：aが正解";
+      A6.textContent = "⑥：httpという通信規約(プロトコル)にsがつくことでセキュリティがしっかりしているサイトを意味する";
+      A7.textContent = "⑦：amazonと記載されているもの以外全て偽物";
+      A8.textContent = "⑧：お客さんの満足を表す笑顔のようになっている";
+      A9.textContent = "⑨：aからzまで→が繋がっていて、AからZまで全ての商品がそろっていることを意味している";
+      */
+    }
+    else {
+      Q_Set();
+    }
+  }
+
+  </script>
+
+  <br>
+  <br>
+  <br>
+ </div>
+ <p id="pageTop"><a href="#" class="arrow">ページ一番上に戻る</a></p>
+</body>
