@@ -1,1 +1,1 @@
-web: gunicorn e_fin .wsgi --log-file - 
+web: gunicorn e_fin.wsgi --log-file - 
