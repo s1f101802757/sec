@@ -1,4 +1,5 @@
 import os
+from main.base_settings import *
 
 #settings.pyからそのままコピー
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
