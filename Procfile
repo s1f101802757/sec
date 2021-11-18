@@ -1,1 +1,1 @@
-web: gunicorn e_fin.wsgi
+web: gunicorn apl_name:e_fin --log-file-
